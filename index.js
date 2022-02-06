@@ -43,8 +43,8 @@
 	let random, colRandom,rowRandom ;
 	const fillBox = ()=>{
 		for(let i = 0; i < (7*7*7) ; i++){
-			colRandom = Math.ceil(Math.random() * 3 -1)
-			rowRandom = Math.ceil(Math.random() * 3 -1)
+			colRandom = Math.ceil(Math.random() * 3)
+			rowRandom = Math.ceil(Math.random() * 3 )
 			random  = Math.ceil(Math.random() * colors.length -1)
 			console.log(random)
 			box.innerHTML += `<div class='caja' style='background:${colors[random]}; grid-column: span ${colRandom};grid-row : span ${rowRandom};'></div>`
