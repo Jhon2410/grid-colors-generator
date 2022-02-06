@@ -40,14 +40,15 @@
 "#f812b3", "#b17fc9", "#8d6c2f", "#d3277a", "#2ca1ae", "#9685eb", "#8a96c6",
 "#dba2e6", "#76fc1b", "#608fa4", "#20f6ba", "#07d7f6", "#dce77a", "#77ecca"]
 
-	let random;
+	let random, colRandom,rowRandom ;
 	const fillBox = ()=>{
-
 		for(let i = 0; i < (7*7*7) ; i++){
+			colRandom = Math.ceil(Math.random() * 3 -1)
+			rowRandom = Math.ceil(Math.random() * 3 -1)
 			random  = Math.ceil(Math.random() * colors.length -1)
 			console.log(random)
-			box.innerHTML += `<div class='caja' style='background:${colors[random]}'></div>`
+			box.innerHTML += `<div class='caja' style='background:${colors[random]}; grid-column: span ${colRandom};grid-row : span ${rowRandom};'></div>`
 		}
 	}
 	fillBox()
-	console.log("a")
+	
