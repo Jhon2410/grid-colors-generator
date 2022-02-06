@@ -6,11 +6,13 @@
 }
 
 .caja:hover{
-    animation: wobble 1s ;
+    animation: wobble 2s ;
 }
 
 .box{
     animation: rubberBand 1s ;
+    animation: wobble 1s ;
+	
     
 }
 
@@ -129,8 +131,8 @@
 .box{
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
-	grid-template-rows: repeat(49, 200px);
-	grid-gap: 5px;
+	grid-template-rows: repeat(100, 200px);
+	grid-gap: 2px;
 }
 .caja{
 	margin: 5px;
